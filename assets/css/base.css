@@ -1,0 +1,325 @@
+:root {
+    --green: #279863;
+    --black: #54595f;
+    --white: #ffffff;
+    --grey: #c6c6cf;
+    --nunito: 'Nunito';
+    --open-sans: 'Open Sans';
+    --pacifico: 'Pacifico';
+}
+
+/**
+  * Elements reset
+*/
+
+::selection,
+footer {
+    background-color: #1a2a36;
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    line-height: 1.7;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: transform ease-in .5s,
+                background ease-out .5s;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    word-break: break-word;
+    font-family: var(--nunito);
+    font-size: 1.1rem;
+}
+
+body,
+.header {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+	margin-top: .5rem;
+}
+
+h1 {
+    margin-bottom: .25rem;
+    font-size: 1.749690125em;
+}
+
+img {
+	-o-object-fit: cover;
+	-o-object-position: center;
+    object-fit: cover;
+    object-position: center;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea {
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border: none;
+	outline: none;
+}
+
+input:not(input[type="checkbox"]),
+textarea {
+	-webkit-appearance: none;
+}
+
+input, 
+button,
+textarea {
+	font-size: 1rem;
+}
+
+textarea {
+	resize: vertical;
+}
+
+button {
+    cursor: pointer;
+}
+
+footer {
+    padding: 5rem 1rem;
+}
+
+footer,
+.footer-link {
+    color: #9b9b9b;
+}
+
+
+/**
+  *  Base  class definitions
+*/
+
+.flex {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.grid {
+    display: -ms-grid;
+    display: grid;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.place-center {
+    place-items: center;
+}
+
+.place-content-center {
+    place-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.flex-column {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.gap-half {
+    grid-gap: .5rem;
+    gap: .5rem;
+}
+
+.gap-1 {
+    grid-gap: 1rem;
+    gap: 1rem;
+}
+
+.gap-2 {
+    grid-gap: 2rem;
+    gap: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute,
+.nav-toggle-icon::before,
+.nav-toggle-icon::after,
+.services-header::before,
+.services-header::after {
+	position: absolute;
+}
+
+.d-none {
+	display: none;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-inline {
+	display: inline;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.border-7 {
+	border-radius: .7rem;
+}
+
+.border-5 {
+	border-radius: .5rem;
+}
+
+.border-1 {
+    border-radius: 1rem;
+}
+
+.border-bottom-grey {
+    border-bottom: 1px solid var(--grey);
+}
+
+.btn {
+    padding: .5rem;
+}
+
+.round {
+	border-radius: 50%;
+}
+
+.header {
+    font-family: var(--open-sans);
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.sub-header {
+    margin-top: -.3rem;
+}
+
+.fr {
+	top: calc(1.5rem - 1.3rem);
+	font-size: 1.2rem;
+}
+
+.list-style-none {
+    list-style-type: none;
+}
+
+.shadow,
+.choose-us-card:hover {
+	box-shadow: 1px 1px 30px 0 rgba(0 0 0 / 10%);
+}
+
+/**
+  * Colors
+*/
+
+.main-bg {
+    background-color: #f9f9f9;
+}
+
+.bg-white,
+.recent-article:hover,
+.intro-container > :first-child:hover {
+    background-color: var(--white);
+}
+
+.bg-green,
+.nav-link.active,
+.nav-link:hover,
+.dropdown-link.active,
+.dropdown-link:hover,
+.read-more-btn:hover,
+.intro-container > :last-child .intro-box:hover {
+    background-color: var(--green);
+}
+
+.bg-black,
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+    background-color: var(--black);
+}
+
+.bg-grey {
+    background-color: var(--grey);
+}
+
+.black,
+.intro-container > :first-child:hover {
+    color: var(--black);
+}
+
+.header,
+.intro-container > :first-child:hover .header {
+    color: #0b2653;
+}
+
+.white,
+.nav-link.active,
+.nav-link:hover,
+.dropdown-link.active,
+.dropdown-link:hover,
+.read-more-btn:hover,
+.intro-container > :last-child .intro-box:hover,
+.intro-container > :last-child .intro-box:hover .header,
+::selection {
+    color: var(--white);
+}
+
+.green,
+.recent-article-title:hover,
+.footer-link:hover {
+    color: var(--green);
+}
+
+.grey {
+    color: var(--grey);
+}

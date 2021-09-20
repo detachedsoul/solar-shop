@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open Sans.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Luckiest Guy';
+    src: url('../fonts/Luckiest Guy.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito.ttf') format('truetype');
+    font-display: swap;
+}

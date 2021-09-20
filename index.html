@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Shop &mdash; Home</title>
+    <link rel="icon" href="assets/img/logo.png">
+
+    <!-- Preload stylesheets and scripts -->
+    <link rel="preload" href="assets/css/preloader.css" as="style">
+    <link rel="preload" href="assets/css/normalize.css" as="style">
+    <link rel="preload" href="assets/css/base.css" as="style">
+    <link rel="preload" href="assets/css/main.css" as="style">
+    <link rel="preload" href="assets/css/fonts.css" as="style">
+    <link rel="preload" href="assets/css/style.css" as="style">
+    <link rel="preload" href="assets/icons/uicons.css" as="style">
+    <link rel="preload" href="assets/icons/all.min.css" as="style">
+    <link rel="preload" href="assets/js/main.js" as="script">
+
+    <!-- Important stylesheets on pageload -->
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body class="main-bg black">
+
+    <!-- Preloader -->
+    <div class="preloader-container fixed w-100 bg-white grid place-center d-none">
+ 
+        <div class="preloader-outer round"></div>
+        <div class="preloader-inner"></div>
+
+    </div>
+    
+    <!-- Header -->
+    <header class="relative">
+
+        <div class="top-header flex gap-2 align-center justify-between flex-wrap bg-black white d-none">
+
+            <div class="flex flex-wrap gap-1">
+
+                <div class="flex align-center gap-half">
+                    <i class="fas fa-envelope green"></i>
+                    <a class="grey" href="mailto: info@email.com">
+                        Email: info@email.com
+                    </a>
+                </div>
+
+                <div class="flex align-center gap-half">
+                    <i class="fas fa-phone-alt green"></i>
+                    <a class="grey" href="tel: +234810500304">
+                        Phone: +2348105008304
+                    </a>
+                </div>
+
+                <div class="flex align-center gap-half grey">
+                    <i class="fas fa-clock green"></i>
+                    Hours: Mon - Fri: 8am - 6pm
+                </div>
+
+            </div>
+
+            <div class="flex gap-2">
+
+                <a class="green" href="" aria-label="Facebook page">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a class="green" href="" aria-label="Instagram handle">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a class="green" href="" aria-label="LinkedIn Page">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <nav class="nav-container flex align-center justify-between bg-white black">
+            
+            <a class="navbar-logo" href="index.html">
+                <img class="logo" src="assets/img/logo.png" alt="Solar Shop" width="120" height="3%">
+            </a>
+
+            <div class="nav-controls flex align-center gap-2">
+
+                <a class="search-toggle black" href="javascript:void(0)" aria-label="Searchbar toggle button">
+                    <i class="fr fi-rr-search relative"></i>
+                </a>
+
+                <a class="nav-toggle" href="javascript:void(0)" aria-label="Navbar toggle button">
+                    <span class="nav-toggle-icon bg-black d-block relative"></span>
+                </a>
+
+            </div>
+
+            <div class="nav-link-container absolute w-100 bg-white">
+
+                <ul class="flex flex-column gap-half">
+
+                    <li class="nav-item list-style-none">
+                        <a class="nav-link black d-block border-7 active" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item list-style-none relative">
+                        <a class="nav-link dropdown-toggle black border-7 flex align-center gap-half justify-between" href="javascript:void(0)" aria-haspopup="true">
+                            Products
+                            <i class="fr fi-rr-angle-small-down relative"></i>
+                        </a>
+
+                        <div class="dropdown absolute bg-white border-7 shadow w-100 d-none">
+
+                            <ul class="flex flex-column gap-1">
+
+                                <li class="list-style-none">
+                                    <a class="black dropdown-link d-block border-7" href="category.html">
+                                        Solar Panels
+                                    </a>
+                                </li>
+
+                                <li class="list-style-none">
+                                    <a class="black dropdown-link d-block border-7" href="category.html">
+                                        Inverters
+                                    </a>
+                                </li>
+
+                                <li class="list-style-none">
+                                    <a class="black dropdown-link d-block border-7" href="category.html">
+                                        Batteries
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item list-style-none">
+                        <a class="nav-link black d-block border-7" href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item list-style-none">
+                        <a class="nav-link black d-block border-7" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="nav-item list-style-none">
+                        <a class="nav-link black d-block border-7" href="login.html">
+                            Login
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <form class="searchbar-container flex gap-half absolute" action="search.html" method="get">
+
+                <label class="w-100 border-5" for="search-input">
+                    <input class="input bg-white border-5 w-100" type="search" id="search-input" autocomplete="off" name="search" placeholder="Search...">
+                </label>
+
+                <button class="submit-btn border-5 bg-green white" type="submit" aria-label="Search button">
+                    <i class="fr fi-rr-search relative"></i>
+                </button>
+
+            </form>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Container -->
+    <div class="hero-container white flex place-center">
+
+        <div class="hero-content">
+
+            <h1 class="header white">
+                Providing Value To Our Clients
+            </h1>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aperiam blanditiis laborum excepturi fugit quae corrupti similique ullam obcaecati vero.
+            </p>
+
+            <div class="flex flex-wrap gap-1 mt-2 mb-2">
+
+                <img class="hero-eco-friendly-img bg-white border-7" src="assets/img/024-energy.png" alt="" width="60" height="auto">
+
+                <img class="hero-eco-friendly-img bg-white border-7" src="assets/img/036-green-energy.png" alt="" width="60" height="auto">
+
+                <img class="hero-eco-friendly-img bg-white border-7" src="assets/img/037-hydro-power.png" alt="" width="60" height="auto">
+
+                <img class="hero-eco-friendly-img bg-white border-7" src="assets/img/048-eco-house.png" alt="" width="60" height="auto">
+
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <main>
+
+
+        <!-- Intro Boxes Container -->
+        <div class="intro-container grid gap-2 relative">
+
+            <div class="intro-box bg-green white border-7">
+
+                <h3 class="header white">
+                    Fostering Growth of Alternate Energy Sources
+                </h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Accusamus repellat voluptatum eos perferendis ad corporis non.
+                </p>
+
+            </div>
+
+            <div class="grid bg-white black border-7">
+
+                <div class="intro-box">
+
+                    <h4 class="header">
+                        Quick Contact
+                    </h4>
+
+                    <p>
+                        Email: info@gmail.com
+                    </p>
+
+                    <p>
+                        Phone: +2348105008304
+                    </p>
+
+                </div>
+
+                <div class="intro-box">
+
+                    <h4 class="header">
+                        Our Location
+                    </h4>
+
+                    <p>
+                        RSU, Nkpolu-Ororonkwo, Port Harcourt, Rivers State,
+                        Nigeria.
+                    </p>
+
+                </div>
+
+                <div class="intro-box">
+
+                    <h4 class="header">
+                        Core Values
+                    </h4>
+
+                    <p>
+
+                        <ul>
+
+                            <li class="values-list-item">
+                                Integrity
+                            </li>
+
+                            <li class="values-list-item">
+                                Commitment
+                            </li>
+
+                            <li class="values-list-item">
+                                Credebility
+                            </li>
+                            
+                        </ul>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Owner's Remark -->
+        <div class="owner-remark-container grid gap-2 mt-2 mb-2">
+
+            <img class="border-7 w-100" src="assets/img/wisdom-ojimah.jpg" alt="Wisdom Ojimah" width="100" height="auto">
+
+            <div>
+
+                <p class="green">
+                    A World Wide Distributor Of Solar Supplies
+                </p>
+
+                <h2 class="header">
+                    Sustainable, Reliable & Affordable Energy!
+                </h2>
+
+                <p>
+                    The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. 
+                    Roughly 850 million of people still without access to electricity, which is the foundation of sustainable development. 
+                    How can we meet growing demand for electricity while protecting our climate?
+                </p>
+
+                <h4 class="header mt-1">
+                    Wisdom Ojimah
+                </h4>
+
+                <p class="sub-header green">
+                    Solar Shop Founder
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Services -->
+        <section>
+
+            <div class="services mt-2 mb-2">
+
+                <div class="mb-2 text-center">
+
+                    <h3 class="header green">
+                        Services
+                    </h3>
+
+                    <h2 class="services-header header relative">
+                        What We Cover
+                    </h2>
+
+                </div>
+
+                <div class="services-grid grid gap-2 mt-2">
+
+                    <div class="flex flex-column">
+
+                        <img class="services-img w-100" src="assets/img/solar-panel.jpg" alt="Solar Panels" width="100%" height="250">
+
+                        <div class="services-details bg-white black">
+
+                            <h2 class="service-header border-bottom-grey header">
+                                Solar Panels
+                            </h2>
+
+                            <p class="border-bottom-grey service-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Aspernatur neque labore perspiciatis libero corrupti 
+                                tempore ducimus iste voluptatibus illum, dignissimos 
+                                veniam eaque cupiditate deserunt recusandae vel omnis 
+                                perferendis, dicta quibusdam.
+                            </p>
+
+                            <p class="mt-2">
+                                <a class="read-more-btn black border-5 btn relative" href="category.html">
+                                    Read More
+                                    <i class="fr fi-rr-arrow-small-right relative"></i>
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-column">
+
+                        <img class="services-img w-100" src="assets/img/inverters.jpg" alt="Inverters" width="100%" height="250">
+
+                        <div class="services-details bg-white black">
+
+                            <h2 class="service-header border-bottom-grey header">
+                                Inverters
+                            </h2>
+
+                            <p class="border-bottom-grey service-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Aspernatur neque labore perspiciatis libero corrupti 
+                                tempore ducimus iste voluptatibus illum, dignissimos 
+                                veniam eaque cupiditate deserunt recusandae vel omnis 
+                                perferendis, dicta quibusdam.
+                            </p>
+
+                            <p class="mt-2">
+                                <a class="read-more-btn black border-5 btn relative" href="category.html">
+                                    Read More
+                                    <i class="fr fi-rr-arrow-small-right relative"></i>
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-column">
+
+                        <img class="services-img w-100" src="assets/img/battery.jpg" alt="Batteries" width="100%" height="250">
+
+                        <div class="services-details bg-white black">
+
+                            <h2 class="service-header border-bottom-grey header">
+                                Solar Panels Batteries
+                            </h2>
+
+                            <p class="border-bottom-grey service-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Aspernatur neque labore perspiciatis libero corrupti 
+                                tempore ducimus iste voluptatibus illum, dignissimos 
+                                veniam eaque cupiditate deserunt recusandae vel omnis 
+                                perferendis, dicta quibusdam.
+                            </p>
+
+                            <p class="mt-2">
+                                <a class="read-more-btn black border-5 btn relative" href="category.html">
+                                    Read More
+                                    <i class="fr fi-rr-arrow-small-right relative"></i>
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Why Choose Us -->
+        <section>
+
+            <div class="choose-us mt-2 mb-2">
+
+                <div class="mb-2 text-center">
+
+                    <h3 class="header green">
+                        Sustainable, Reliable & Affordable Energy!
+                    </h3>
+
+                    <h2 class="services-header header relative">
+                        Why Choose Us
+                    </h2>
+
+                </div>
+
+                <div class="choose-us-grid grid gap-2 mt-2">
+
+                    <div class="choose-us-card text-center bg-white black border-7">
+
+                        <img class="round bg-green" src="assets/img/save-money.png" alt="Save Money" width="70" height="70">
+
+                        <h2 class="service-header header mt-1">
+                            Save Your Money
+                        </h2>
+
+                        <p>
+                            Save money on utilities or increase the value of your home by 
+                            installing solar panels as a great option.
+                        </p>
+
+                    </div>
+
+                    <div class="choose-us-card text-center bg-white black border-7">
+
+                        <img class="round bg-green" src="assets/img/save-energy.png" alt="Save Energy" width="70" height="70">
+
+                        <h2 class="service-header header mt-1">
+                            Save Energy
+                        </h2>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Aspernatur neque labore perspiciatis libero corrupti.
+                        </p>
+
+                    </div>
+
+                    <div class="choose-us-card text-center bg-white black border-7">
+
+                        <img class="round bg-green" src="assets/img/consult-planning.jpg" alt="Consultation & Planning" width="70" height="70">
+
+                        <h2 class="service-header header mt-1">
+                            Consultation & Planning
+                        </h2>
+
+                        <p>
+                            Our remote industrial solar systems are designed to reliably power 
+                            our clients critical remote locations.
+                        </p>
+
+                    </div>
+
+                    <div class="choose-us-card text-center bg-white black border-7">
+
+                        <img class="round bg-green" src="assets/img/customer-service.png" alt="Customer Service" width="70" height="70">
+
+                        <h2 class="service-header header mt-1">
+                            5 Stars Customer Service
+                        </h2>
+
+                        <p>
+                            We understand that we must go above our customer expectations 
+                            during each interaction always.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recent Article -->
+        <section>
+
+            <div class="articles mt-2 mb-2">
+
+                <div class="mb-2 text-center">
+
+                    <h3 class="header green">
+                        News & Announcements
+                    </h3>
+
+                    <h2 class="services-header header relative">
+                        Recent Articles
+                    </h2>
+
+                </div>
+
+                <div class="recent-articles-grid grid gap-2 mt-2">
+
+                    <div class="recent-article border-7">
+
+                        <img class="recent-article-img border-7 w-100" src="assets/img/post-1.jpg" alt="Some Dummy Title To Fill Space" width="100%" height="250">
+
+                        <div class="recent-article-content">
+
+                            <p>
+                                September 19, 2021
+                            </p>
+
+                            <h3 class="header">
+                                <a class="recent-article-title black" href="">
+                                    Some Dummy Title To Fill Space
+                                </a>
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Impedit, molestiae.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Impedit, molestiae.
+                            </p>
+
+                            <p class="post-author">
+                                &mdash; Wisdom Ojimah
+                            </p>
+
+                            <p class="mt-2 mb-1">
+                                <a class="read-more-btn black border-5 btn" href="article.html">
+                                    Read More
+                                    <i class="fr fi-rr-arrow-small-right relative"></i>
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="recent-article border-7">
+
+                        <img class="recent-article-img border-7 w-100" src="assets/img/post-2.jpg" alt="Some Dummy Title To Fill Space" width="100%" height="250">
+
+                        <div class="recent-article-content">
+
+                            <p>
+                                September 19, 2021
+                            </p>
+
+                            <h3 class="header">
+                                <a class="recent-article-title black" href="">
+                                    Some Dummy Title To Fill Space
+                                </a>
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Impedit, molestiae.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Impedit, molestiae.
+                            </p>
+
+                            <p class="post-author">
+                                &mdash; Vanesta
+                            </p>
+
+                            <p class="mt-2 mb-1">
+                                <a class="read-more-btn black border-5 btn" href="article.html">
+                                    Read More
+                                    <i class="fr fi-rr-arrow-small-right relative"></i>
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="recent-article border-7">
+
+                        <img class="recent-article-img border-7 w-100" src="assets/img/post-3.jpg" alt="Some Dummy Title To Fill Space" width="100%" height="250">
+
+                        <div class="recent-article-content">
+
+                            <p>
+                                September 19, 2021
+                            </p>
+
+                            <h3 class="header">
+                                <a class="recent-article-title black" href="">
+                                    Some Dummy Title To Fill Space
+                                </a>
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Impedit, molestiae.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Impedit, molestiae.
+                            </p>
+
+                            <p class="post-author">
+                                &mdash; DetachedSoul
+                            </p>
+
+                            <p class="mt-2 mb-1">
+                                <a class="read-more-btn black border-5 btn" href="article.html">
+                                    Read More
+                                    <i class="fr fi-rr-arrow-small-right relative"></i>
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <div class="footer-container grid gap-2 mb-2 border-bottom-grey">
+
+                <div>
+
+                    <h2 class="header white">
+                        Quick Contact
+                    </h2>
+
+                    <div class="mt-1">
+
+                        <p class="flex gap-1 flex-wrap mb-1">
+
+                            <a class="footer-icon round bg-white black shadow" href="https://www.facebook.com/IamWisdomOjimah" target="_blank" title="Facebook" rel="noopener noreferrer">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <a class="footer-icon round bg-white black shadow" href="https://github.com/detachedsoul" target="_blank" title="Github" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a class="footer-icon round bg-white black shadow" href="https://wa.me/+2348067589085" target="_blank" title="WhatsApp" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+
+                            <a class="footer-icon round bg-white black shadow" href="https://www.linkedin.com/in/wisdom-ojimah-9a4466186/" target="_blank"
+                                title="LinkedIn" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+
+                            <a class="footer-icon round bg-white black shadow" href="mailto: vindicatedwisdom@gmail.com" target="_blank" title="Email" rel="noopener noreferrer">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+
+                        </p>
+
+                        <p class="flex align-center gap-half">
+
+                            <i class="fas fa-phone-alt"></i>
+
+                            <a class="footer-link" href="tel:+2348105008304">
+                                +234 810 500 8304
+                            </a>
+
+                        </p>
+
+                        <p class="flex align-center gap-half">
+
+                            <i class="fas fa-envelope-open-text"></i>
+
+                            <a class="green" href="mailto: vindicatedwisdom@gmail.com">
+                                Email: info@gmail.com
+                            </a>
+
+                        </p>
+
+                        <p class="flex gap-half">
+
+                            <i class="fas fa-map-marker-alt"></i>
+
+                            RSU, Port Harcourt, Rivers State, Nigeria
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div>
+                    
+                    <h2 class="header white">
+                        Services
+                    </h2>
+
+                    <ul class="flex flex-column gap-half mt-1">
+
+                        <li class="list-style-none">
+                            <a class="footer-link" href="category.html">
+                                Solar Panel
+                            </a>
+                        </li>
+
+                        <li class="list-style-none">
+                            <a class="footer-link" href="category.html">
+                                Inverters
+                            </a>
+                        </li>
+
+                        <li class="list-style-none">
+                            <a class="footer-link" href="category.html">
+                                Batteries
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+                    
+                    <h2 class="header white">
+                        Quick Links
+                    </h2>
+
+                    <ul class="flex flex-column gap-half mt-1">
+
+                        <li class="list-style-none">
+                            <a class="footer-link" href="home.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="list-style-none">
+                            <a class="footer-link" href="javascript:void(0)">
+                                Products
+                            </a>
+                        </li>
+
+                        <li class="list-style-none">
+                            <a class="footer-link" href="about.html">
+                                About
+                            </a>
+                        </li>
+
+                        <li class="list-style-none">
+                            <a class="footer-link" href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                        <li class="list-style-none">
+                            <a class="footer-link" href="login.html">
+                                Login
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="copyright flex align-center justify-between flex-wrap">
+
+                <p>
+                    &copy; 2021 All rights reserved.
+                </p>
+
+                <p>
+                    Created with all the <i class="fr fi-rr-heart relative green"></i>
+                    in the world by  
+                    <a class="footer-link grey" href="https://web.facebook.com/IamWisdomOjimah" target="_blank" rel="noopener noreferrer">
+                        Wisdom Ojimah
+                    </a>
+                </p>
+
+            </div>
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- Scroll to top button -->
+    <a class="to-top bg-green white border-5 fixed" href="javascript:void(0)" aria-label="Scroll to top button">
+        <i class="fr fi-rr-angle-up"></i>
+    </a>
+
+
+    <!-- Stylesheets and scripts -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/icons/uicons.css">
+    <link rel="stylesheet" href="assets/icons/all.min.css">
+    <script src="assets/js/main.js" defer></script>
+    <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js" defer crossorigin="anonymous"></script>
+
+</body>
+</html>

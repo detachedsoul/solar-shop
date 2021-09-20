@@ -1,0 +1,40 @@
+.preloader-container {
+    top: 0;
+    height: 100vh;
+    z-index: 9999999999;
+}
+
+.preloader-outer,
+.preloader-inner {
+    border: 3px solid transparent;
+    border-top-color: var(--black);
+    border-bottom-color: var(--black);
+}
+
+.preloader-outer {
+    width: 40px;
+    height: 40px;
+    border-right-color: var(--black);
+    animation: clockwiseSpin 1s infinite linear forwards;
+}
+
+.preloader-inner {
+    width: 20px;
+    height: 20px;
+    content: '';
+    position: absolute;
+    left: calc(50% - 10px);
+    border-radius: 50%;
+    border-left-color: var(--black);
+    animation: antiClockwiseSpin 1s infinite linear forwards;
+}
+
+@keyframes clockwiseSpin {
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes antiClockwiseSpin {
+    from {transform: rotate(0);}
+    to {transform: rotate(-360deg);}
+}
