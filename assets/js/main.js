@@ -5,17 +5,9 @@ window.onload = () => {
     }, 1000);
 };
 
-let topHeader = document.querySelector('.top-header');
-let navContainer = document.querySelector('.nav-container');
 let toTopBtn = document.querySelector('.to-top');
 let header = document.querySelector('header');
 window.onscroll = () => {
-
-    if (document.documentElement.scrollTop >= topHeader.clientHeight || document.body.scrollTop >= topHeader.clientHeight) {
-        navContainer.classList.add(['fixed'], ['w-100']);
-    } else {
-        navContainer.classList.remove(['fixed'], ['w-100']);
-    }
 
     if (document.documentElement.scrollTop >= 200 || document.body.scrollTop > 200) {
         toTopBtn.classList.add('show-to-top');

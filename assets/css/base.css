@@ -32,6 +32,7 @@ footer {
 body {
     -webkit-font-smoothing: antialiased;
     word-break: break-word;
+    word-wrap: break-word;
     font-family: var(--nunito);
     font-size: 1.1rem;
 }
@@ -43,6 +44,10 @@ body,
 
 a {
     text-decoration: none;
+}
+
+header {
+    display: unset;
 }
 
 p {
